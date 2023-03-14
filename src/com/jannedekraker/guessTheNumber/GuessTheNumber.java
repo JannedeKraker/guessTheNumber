@@ -25,23 +25,24 @@ public class GuessTheNumber {
 
         System.out.println("Guess a number between 1 and 1000. You can guess ten times.");
 
-         do { System.out.println("This is Guess " + nameNumber[counter] +":");
-             int firstGuess = inputKeyboard.nextInt();
-             if (guessNumber == firstGuess) {
-                System.out.println("You guessed the number in " + nameNumber[counter] + " Times!");
-                return;
+      do { System.out.println("This is Guess " + nameNumber[counter] +":");
+                int firstGuess = inputKeyboard.nextInt();
+                if (guessNumber == firstGuess) {
+                    System.out.println("You guessed the number in " + nameNumber[counter] + " Times!");
+                    return;
+                }
+                else if (firstGuess > guessNumber) {
+                    System.out.println("the number is too high.");
+                }
+                else {
+                    System.out.println("the number is too low.");
+                }
+                counter++;
             }
-             else if (firstGuess > guessNumber) {
-                System.out.println("the number is too high.");
-            }
-             else {
-                System.out.println("the number is too low.");
-            }
-            counter++;
-        }
          while (counter < 11);
          System.out.println("Unfortunately, you didn't guess the number. the number was: " + guessNumber);
-    }
+        }
+
 }
 
 
