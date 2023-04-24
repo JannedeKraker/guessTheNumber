@@ -25,6 +25,8 @@ public class BirdCage {
         gullOne.soundBird();
         System.out.print("Sound of a sparrow is: ");
         sparrowOne.soundBird();
+        System.out.print("Sound of a sparrow is: ");
+        sparrowOne.soundBird("(lure call)");
         System.out.print("Sound of a turkey is: ");
         turkeyOne.soundBird();
     }
