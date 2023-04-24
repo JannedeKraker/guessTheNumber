@@ -34,4 +34,8 @@ public class Bird {
     public void setColorOfFeathers(String colorOfFeathers) {
         this.colorOfFeathers = colorOfFeathers;
     }
+
+    public void soundBird() {
+        System.out.println("tjilp, tjilp");
+    }
 }

@@ -5,6 +5,7 @@ import com.jannedekraker.week7.birds.Bird;
 public class Gull extends Bird {
 
     String sortGull;
+
     public Gull(int lengthOfWing, String colorBeak, String colorOfFeathers, String sortGull) {
         super(lengthOfWing, colorBeak, colorOfFeathers);
         this.sortGull = sortGull;
@@ -16,5 +17,10 @@ public class Gull extends Bird {
 
     public void setSortGull(String sortGull) {
         this.sortGull = sortGull;
+    }
+
+    @Override
+    public void soundBird() {
+        System.out.println("ga ga ga ga kyowkyowkyow");
     }
 }

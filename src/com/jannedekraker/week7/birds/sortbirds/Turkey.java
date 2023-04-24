@@ -28,4 +28,11 @@ public class Turkey extends Bird {
     public void setSound(String sound) {
         this.sound = sound;
     }
+
+
+    @Override
+    public void soundBird() {
+        System.out.println("kloek kloek kloek kloek");
+    }
 }
+
